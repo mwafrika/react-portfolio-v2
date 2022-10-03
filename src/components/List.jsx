@@ -1,11 +1,20 @@
 import React from 'react';
+import { motion, useScroll } from 'framer-motion';
 
 const List = () => {
   return (
     <div className='flex flex-col justify-center gap-y-[142px] col-span-full row-start-2 row-end-3'>
-      <div className='flex p-6 h-[496px] w-[80%] mx-auto rounded-3xl bg-white'>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+        className='flex p-6 h-[496px] w-[80%] mx-auto rounded-3xl bg-white'
+      >
         <div className='w-1/2 rounded-lg overflow-hidden'>
-          <img
+          <motion.img
+            initial={{ y: 70, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             src='/list/Snapshoot.svg'
             className='object-cover w-full h-full'
           />
@@ -42,7 +51,12 @@ const List = () => {
             See Project
           </button>
         </div>
-      </div>
+      </motion.div>
+
+      {/* test  */}
+
+      {/* test */}
+
       <div className='flex p-6 h-[496px] w-[80%] mx-auto rounded-3xl bg-white'>
         <div className='w-1/2 rounded-lg flex flex-col pl-10'>
           <h2 className='text-[40px] text-[#091E42] font-bold leading-[52px] mb-5'>

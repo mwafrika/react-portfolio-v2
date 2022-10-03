@@ -1,3 +1,3 @@
-# simple-search-box-react
+# Portfolio
 
-This is a simple search box created using React, TailwindCSS and Vite build tool
+Portfolio previously built with Javascript and rebuilt using react
